@@ -13,6 +13,9 @@ module.exports = {
       "bg-off": ["#ABEF5F80"],
       "text-black": ["#000000"],
       "p-color": ["#494949"],
+      "s-color": ["#F4F4F4"],
+      "bg-white": ["#ffffff"],
+      "h1-color": ["#212121"],
     },
 
     backgroundImage: {
