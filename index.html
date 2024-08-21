@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,16 +12,110 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-
     <!-- font awesome kits -->
     <script
       src="https://kit.fontawesome.com/2f9296a450.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- fonts style -->
+    <style>
+      .manrope-regular {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <button class="btn btn-primary">One</button>
-    <button class="btn btn-secondary">Two</button>
-    <button class="btn btn-accent btn-outline">Three</button>
+  <body
+    class="manrope-regular bg-gradient-to-r from-[rgb(255, 255, 255)] to-[rgba(255, 255, 255)0%]"
+  >
+    <div>
+      <!-- header section -->
+      <header class="w-11/12 mx-auto">
+        <nav class="py-8 lg:py-10">
+          <div class="navbar flex items-cente bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div
+                  tabindex="0"
+                  role="button"
+                  class="lg:hidden w-8 h-8 p-1 border border-gray-200 bg-slate-100 rounded-full flex justify-center items-center"
+                >
+                  <!-- mobile bar icons -->
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <!-- logo text -->
+              <div
+                class="bg-primary-r-color-0 rounded-full w-8 h-8 p-1 flex justify-center items-center"
+              >
+                <i class="fa-solid fa-arrow-up rotate-45 text-lg"></i>
+              </div>
+              <a class="text-3xl font-extrabold ml-2">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li>
+                  <a
+                    class="text-text-nav-active-0 text-lg font-bold hover:bg-transparent"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-text-nav-regular-0 text-lg font-bold hover:bg-transparent"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-text-nav-regular-0 text-lg font-bold hover:bg-transparent"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-text-nav-regular-0 text-lg font-bold hover:bg-transparent"
+                    >Blogs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-text-nav-regular-0 text-lg font-bold hover:bg-transparent"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-end hidden lg:flex gap-10">
+              <div class="flex gap-5">
+                <i
+                  class="fa-solid fa-magnifying-glass bg-bg-accent-0 w-10 h-10 p-3 rounded-full items-center justify-center cursor-pointer"
+                ></i>
+                <i
+                  class="fa-solid fa-cart-shopping bg-bg-accent-0 w-10 h-10 p-3 rounded-full items-center justify-center cursor-pointer"
+                ></i>
+              </div>
+              <a class="btn text-lg font-bold bg-primary-r-color-0 rounded-3xl"
+                >Book Consult
+                <span class="w-8 h-8 rounded-full bg-top-right-color-0"
+                  ><i
+                    class="fa-solid fa-arrow-up rotate-45 text-text-white-0"
+                  ></i></span
+              ></a>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
   </body>
 </html>
