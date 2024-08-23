@@ -16,6 +16,12 @@ module.exports = {
       "s-color": ["#F4F4F4"],
       "bg-white": ["#ffffff"],
       "h1-color": ["#212121"],
+      color_bg: ["#f7f7f7"],
+      border_color: ["#E9E9E9"],
+      concept_color: ["#E7C1D3"],
+      design_color: ["#EFDA6E"],
+      supervision_color: ["#A4DAC3"],
+      budget_color: ["#77AAEA"],
     },
 
     backgroundImage: {
