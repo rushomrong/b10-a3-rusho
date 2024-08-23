@@ -22,6 +22,7 @@ module.exports = {
       design_color: ["#EFDA6E"],
       supervision_color: ["#A4DAC3"],
       budget_color: ["#77AAEA"],
+      btn_20: [" #ABEF5F33"],
     },
 
     backgroundImage: {
