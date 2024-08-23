@@ -26,7 +26,7 @@ module.exports = {
     },
 
     backgroundImage: {
-      bg: "url('./assets/bg.jpg')",
+      "bg-pattern": "url('/assets/bg.jpg')",
     },
   },
   plugins: [require("daisyui")],
