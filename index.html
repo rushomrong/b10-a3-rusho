@@ -28,7 +28,7 @@
   <body class="manrope-regular">
     <div class="bg-gradient-to-b from-color_bg-0 to-bg-white-0">
       <!-- header section -->
-      <header class="w-11/12 mx-auto overflow-hidden relative">
+      <header class="w-11/12 mx-auto relative">
         <nav class="py-8 lg:py-10">
           <div class="navbar flex items-cente justify-between">
             <div class="navbar-start">
@@ -91,22 +91,25 @@
               </a>
             </div>
             <!-- right mobile icon -->
-             <div class="dropdown flex flex-col justify-start relative">
-              <div
-              tabindex="0"
-              role="button"
-              class="lg:hidden w-8 h-8 p-1 rounded-full border border-border_color-0 flex justify-center items-center">
-              <!-- mobile bar icons -->
-              <i class="fa-solid fa-bars"></i>
-            </div>
-              <ul
+             <div class="navbar flex md:hidden lg:hidden w-full justify-end">
+              <div class="dropdown">
+                <div
                 tabindex="0"
-                class="menu menu-sm dropdown-content rounded-box z-50 mt-9 w-40 p-2 shadow flex justify-start relative">
-                <li><a>Item 1</a></li>
-                <li><a>Item 1</a></li>
-                <li><a>Item 1</a></li>
-              </ul>
-
+                role="button"
+                class="lg:hidden w-8 h-8 p-1 rounded-full border border-border_color-0 flex justify-center items-center">
+                <!-- mobile bar icons -->
+                <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content w-40 rounded-box z-[1] shadow right-0 relative">
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+             </div>
              </div>
             
             </div>
@@ -300,9 +303,7 @@
                 </div>
 
                 <!-- 2nd card section -->
-                <div
-                  class="flex items-center gap-4 bg-bg-white-0 shadow-lg rounded-lg p-6 mt-6 w-auto"
-                >
+                <div class="flex items-center gap-4 bg-bg-white-0 shadow-lg rounded-lg p-6 mt-6 w-auto">
                   <img src="./assets/residential.png" alt=""/>
                   <div>
                     <h3 class="font-extrabold text-xl mb-2">Residential</h3>
@@ -451,8 +452,8 @@
                   <img src="./assets/img1.png" alt="" class="rounded-xl w-full md:w-64">
                 </figure>
                 
-                <div class="card-body items-center md:items-start justify-center text-center md:text-start flex-1 p-4">
-                  <h2 class="card-title text-2xl font-extrabold text-text-nav-active-0 py-2">Commercial</h2>
+                <div class="card-body md:items-start justify-center text-left flex-1 p-3">
+                  <h2 class="card-title text-2xl font-extrabold text-text-nav-active-0">Commercial</h2>
                   <p class="md:text-lg text-[14px] text-text-nav-regular-0">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
 
                   <div class="card-actions">
@@ -498,8 +499,8 @@
                 <img src="./assets/img4.png" alt="" class="rounded-xl w-full md:w-64">
               </figure>
               
-              <div class="card-body items-center md:items-start justify-center text-start md:text-start flex-1 p-4">
-                <h2 class="card-title text-2xl font-extrabold text-text-nav-active-0 py-2">Commercial</h2>
+              <div class="card-body md:items-start justify-center text-start md:text-start flex-1 p-3">
+                <h2 class="card-title text-2xl font-extrabold text-text-nav-active-0">Commercial</h2>
                 <p class="md:text-lg text-[14px] text-text-nav-regular-0">The barn house captivates with its blend of rustic charm and modern. </p>
 
                 <div class="card-actions">
