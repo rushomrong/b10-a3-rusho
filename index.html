@@ -28,7 +28,7 @@
   <body class="manrope-regular">
     <div class="bg-gradient-to-b from-color_bg-0 to-bg-white-0">
       <!-- header section -->
-      <header class="w-11/12 mx-auto overflow-hidden">
+      <header class="w-11/12 mx-auto overflow-hidden relative">
         <nav class="py-8 lg:py-10">
           <div class="navbar flex items-cente justify-between">
             <div class="navbar-start">
@@ -91,22 +91,21 @@
               </a>
             </div>
             <!-- right mobile icon -->
-             <div class="dropdown flex flex-col justify-start">
+             <div class="dropdown flex flex-col justify-start relative">
               <div
               tabindex="0"
               role="button"
-              class="lg:hidden w-8 h-8 p-1 rounded-full border border-border_color-0 flex justify-center items-center"
-            >
+              class="lg:hidden w-8 h-8 p-1 rounded-full border border-border_color-0 flex justify-center items-center">
               <!-- mobile bar icons -->
               <i class="fa-solid fa-bars"></i>
             </div>
-            <ul
-        tabindex="0"
-        class="menu menu-sm dropdown-content rounded-box z-[5] mt-9 w-40 p-2 shadow flex justify-start overflow-hidden absolute">
-        <li><a>Item 1</a></li>
-        <li><a>Item 1</a></li>
-        <li><a>Item 1</a></li>
-      </ul>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content rounded-box z-50 mt-9 w-40 p-2 shadow flex justify-start relative">
+                <li><a>Item 1</a></li>
+                <li><a>Item 1</a></li>
+                <li><a>Item 1</a></li>
+              </ul>
 
              </div>
             
@@ -115,8 +114,8 @@
          </nav>
 
         <!-- hero content -->
-        <div class="hero pt-14 md:mb-28 mb-10 bg-gradient-to-b from-color_bg-0 to-bg-white-0 z-[0]">
-          <div class="hero-content text-center z-[0]">
+        <div class="hero pt-14 md:mb-28 mb-10 bg-gradient-to-b from-color_bg-0 to-bg-white-0 z-0 relative">
+          <div class="hero-content text-center">
             <div class="flex flex-col md:items-center">
               <img src="./assets/banner.png" alt="" class="md:w-2/4" />
               <h1 class="md:text-5xl text-3xl font-bold pt-6 md:w-3/4 mb-6">
@@ -142,13 +141,97 @@
             </div>
           </div>
         </div>
+
+       
       </header>
     </div>
 
     <!-- main start -->
     <main>
+
+      <!-- property search form - as challenge part -->
+      <section class="md:pt-20 md:pb-40">
+        <div class="w-3/4 relative z-1 mx-auto">
+           <div class="hero md:absolute">
+              <div class="hero-content flex flex-col text-center">
+                <div class="grid grid-cols-1">
+                  <form class="bg-bg-white-0 rounded-xl shadow-md w-full">
+                      <div class="text-start p-6">
+                         <div class="grid md:grid-cols-4 grid-cols-1 md:gap-0 gap-6">
+
+                          <!-- search field -->
+                            <div class="py-3">
+                              <label  for="search" class="label font-medium text-text-nav-active-0 w-full flex justify-start" aria-required="">
+                                Search:
+                                <span class="text-concept_color-0">*</span>
+                              </label>
+
+                              <div class="relative mt-2 p-2 bg-s-color-0 md:border-r-2 md:border-bg_border_right-0">
+                                <i class="fa-solid fa-magnifying-glass text-primary-r-color-0 inset-inline-start"></i>
+                                <input type="text" name="" id="" class="border-none bg-s-color-0 p-2" placeholder="Search your keyword">
+                              </div>
+                            </div>
+
+                            <!-- category field -->
+                            <div class="py-3">
+                              <label for="category" class="label font-medium text-text-nav-active-0 w-full">Select Categories:</label>
+
+                              <div class="relative mt-2 p-1 bg-s-color-0 flex items-center justify-center md:border-r-2 md:border-bg_border_right-0">
+                                <i class="fa-solid fa-house text-primary-r-color-0 inset-inline-start"></i>
+
+                                 <div class="w-full bg-transparent" data-type="select-one" role="combobox">
+                                  <select name="" id="" class="select z-2 w-full ml-1 bg-s-color-0 text-text-nav-active-0 " tabindex="p-1">
+                                    <option value="category">Houses</option>
+                                  </select>
+                                 </div>
+                              </div>
+                            </div>
+
+                            <!-- Min Price field -->
+                            <div class="py-3">
+                              <label for="category" class="label font-medium text-text-nav-active-0 w-full">Min Price:</label>
+
+                              <div class="relative mt-2 p-1 bg-s-color-0 flex items-center justify-center md:border-r-2 md:border-bg_border_right-0">
+                                <i class="fa-solid fa-dollar-sign text-lg text-primary-r-color-0 inset-inline-start"></i>
+
+                                 <div class="w-full bg-transparent" data-type="select-one" role="combobox">
+                                  <select name="" id="" class="select z-2 w-full ml-1 bg-s-color-0 text-text-nav-active-0" tabindex="p-1">
+                                    <option value="min-price" class="font-semibold">$1000</option>
+                                  </select>
+                                 </div>
+                              </div>
+                            </div>
+
+                             <!-- Max Price field -->
+                             <div class="py-3">
+                              <label for="category" class="label font-medium text-text-nav-active-0 w-full">Max Price:</label>
+
+                              <div class="relative mt-2 p-1 bg-s-color-0 flex items-center justify-center">
+                                <i class="fa-solid fa-dollar-sign text-lg text-primary-r-color-0 inset-inline-start"></i>
+
+                                 <div class="w-full bg-transparent" data-type="select-one" role="combobox">
+                                  <select name="" id="" class="select z-2 w-full ml-1 bg-s-color-0 text-text-nav-active-0 " tabindex="p-1">
+                                    <option value="max-price">$1200</option>
+                                  </select>
+                                 </div>
+                              </div>
+                            </div>
+                         </div>
+
+                         <!-- search button -->
+                         <div class="lg:mt-6 md:w-1/3">
+                          <input type="submit" id="search" name="search" class="btn text-top-right-color-0 font-extrabold w-full bg-primary-r-color-0 !h-12 rounded tex-2xl" value="Search">
+                         </div>
+                      </div>
+                  </form>
+                </div>
+              </div>
+           </div>
+        </div>
+      </section>
+
       <!-- about us  -->
-      <section class="bg-s-color-0 overflow-hidden">
+      <section class="bg-s-color-0 overflow-hidden md:pt-40">
         <div class="w-11/12 mx-auto md:py-8 py-8">
           <div class="hero md:py-12">
             <div
@@ -575,5 +658,11 @@
         </div>
       </footer>
      </section>
+
+     <script>
+      document.querySelector('.fa-bars').addEventListener('click', function() {
+  document.querySelector('.dropdown-content').classList.toggle('hidden');
+});
+     </script>
   </body>
 </html>
