@@ -25,10 +25,6 @@ module.exports = {
       btn_20: [" #ABEF5F33"],
       bg_border_right: ["#e5e7eb"],
     },
-
-    backgroundImage: {
-      bg: "url('./assets/bg-pattern.jpg')",
-    },
   },
   plugins: [require("daisyui")],
 };
